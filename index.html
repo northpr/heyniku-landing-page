@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title id="page-title">HeyNiku.dev - Automate & Grow</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@600&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">HeyNiku</div>
+    <div class="lang-switcher">
+        <a href="#" data-lang="th" class="lang-link active">TH</a>
+        <span>|</span>
+        <a href="#" data-lang="en" class="lang-link">EN</a>
+    </div>
+    <a href="mailto:northpatawee@gmail.com" class="cta-button cta-outline" id="cta-contact-us">Contact Us</a>
+  </header>
+
+  <main>
+    <section class="intro">
+      <h1 id="intro-h1">Turn Repetition Into <span class="text-accent">Results</span></h1>
+      <p id="intro-p">We build simple automations and clear dashboards to solve routine tasks, unlocking sustainable growth for your business.</p>
+    </section>
+    
+    <section class="about-section">
+        <p id="about-p1">
+            <strong>We solve a universal business problem: valuable time lost to <span class="text-accent">repetitive manual tasks.</span></strong> We believe in simple solutions—lightweight scripts and intuitive dashboards—over complex, expensive platforms.
+        </p>
+        <p id="about-p2">
+            Our mission is to give your team back its time. We automate the mundane to <span class="text-accent">unlock</span> your team's potential for innovation and strategy. Our tools scale with you, ensuring your efficiency grows as you do.
+        </p>
+    </section>
+
+    <section class="feature-section">
+      <h2 id="feature1-h2">Automate Your Workflow</h2>
+      <p id="feature1-p">Free up your team for innovation by eliminating manual tasks, achieving up to <span class="text-accent">48% more availability</span> in the first year.</p>
+      <div class="chart-container">
+        <canvas id="automationChart"></canvas>
+      </div>
+    </section>
+
+    <hr class="section-separator">
+
+    <section class="feature-section">
+      <h2 id="feature2-h2">Manage Inventory Intelligently</h2>
+      <p id="feature2-p">Move from average to <span class="text-accent">best-in-class</span> inventory accuracy with steadily improving real-time tracking and forecasting.</p>
+      <div class="chart-container">
+        <canvas id="inventoryChart"></canvas>
+      </div>
+    </section>
+
+    <hr class="section-separator">
+    
+    <section class="feature-section">
+      <h2 id="feature3-h2">Visualize Your Growth</h2>
+      <p id="feature3-p">Make faster, smarter decisions. Our dashboards turn your complex data into a <span class="text-accent">clear roadmap for growth.</span></p>
+      <div class="chart-container">
+        <canvas id="dashboardsChart"></canvas>
+      </div>
+    </section>
+    
+    <hr class="section-separator">
+    
+    <section class="fun-facts-section">
+      <h2 id="facts-h2">Did You Know?</h2>
+      <div class="facts-grid">
+        <div class="fact-card">
+          <p class="fact-card-title" id="fact1-title">6+ Hours a Week</p>
+          <p class="fact-card-text" id="fact1-text">Is what 60% of employees believe they could save if their routine tasks were automated.</p>
+        </div>
+        <div class="fact-card">
+          <p class="fact-card-title" id="fact2-title">Only 12% of Data</p>
+          <p class="fact-card-text" id="fact2-text">Is what most businesses analyze. The other 88% is filled with missed opportunities and key insights.</p>
+        </div>
+        <div class="fact-card">
+          <p class="fact-card-title" id="fact3-title">A 30% Growth Gap</p>
+          <p class="fact-card-text" id="fact3-text">Insight-driven businesses grow over 30% annually. Companies not using their data risk falling behind and losing market share.</p>
+        </div>
+      </div>
+    </section>
+    
+    <section class="final-cta">
+        <h2 id="final-cta-h2">Ready to see a demo?</h2>
+        <a href="mailto:northpatawee@gmail.com" class="cta-button" style="padding: 1rem 2rem; font-size: 1.1rem;" id="final-cta-button">Contact Us</a>
+    </section>
+  </main>
+
+  <footer>
+    <p id="footer-p">&copy; 2025 HeyNiku.dev. All rights reserved.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

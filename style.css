@@ -1,0 +1,143 @@
+:root {
+  --dark-bg: #121212;
+  --light-bg: #1E1E1E;
+  --text-primary: #FFFFFF;
+  --text-secondary: #888888;
+  --accent-red: #EF4444;
+  --accent-blue: #38BDF8;
+}
+
+body { 
+  font-family: 'Montserrat', sans-serif; 
+  font-weight: 400;
+  margin: 0; 
+  padding: 0; 
+  background-color: var(--dark-bg);
+  color: var(--text-primary); 
+  line-height: 1.7; 
+  text-align: center;
+}
+
+h1, h2, .logo, .fact-card-title {
+  font-family: 'IBM Plex Mono', monospace;
+  font-weight: 600;
+}
+
+.text-accent { color: var(--accent-red); }
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.logo { font-size: 1.5rem; }
+
+.lang-switcher {
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 600;
+}
+
+.lang-switcher a {
+    color: var(--text-secondary);
+    text-decoration: none;
+    padding: 0.2rem 0.5rem;
+    transition: color 0.3s ease;
+}
+
+.lang-switcher a:hover {
+    color: var(--text-primary);
+}
+
+.lang-switcher a.active {
+    color: var(--accent-blue);
+}
+
+.cta-button {
+  background-color: var(--accent-red);
+  color: var(--text-primary);
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease; /* Changed to 'all' for smooth hover effect */
+}
+
+/* UPDATED: Style for the more subtle outline button */
+.cta-button.cta-outline {
+    background-color: transparent;
+    color: var(--accent-red);
+    border: 2px solid var(--accent-red);
+}
+
+.cta-button.cta-outline:hover {
+    background-color: var(--accent-red);
+    color: var(--text-primary);
+    transform: scale(1.05);
+}
+
+main { padding: 2rem 1rem; }
+
+.intro {
+  max-width: 700px;
+  margin: 2rem auto 4rem auto;
+}
+
+.intro h1 { font-size: 3.2rem; line-height: 1.2; }
+.intro p { font-size: 1.2rem; color: var(--text-primary); }
+
+.about-section {
+  text-align: left;
+  max-width: 850px;
+  margin: 0 auto 4rem auto;
+  background-color: var(--light-bg);
+  padding: 2.5rem;
+  border-radius: 16px;
+}
+
+.about-section p {
+  font-size: 1.1rem;
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+}
+
+.about-section strong { font-weight: 600; }
+
+.feature-section {
+  padding: 2rem 0;
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.feature-section h2 { font-size: 2.5rem; margin-top: 0; }
+.feature-section p { color: var(--text-secondary); max-width: 600px; margin: 0 auto 2.5rem auto; font-size: 1.1rem; }
+.chart-container { max-width: 650px; margin: 0 auto; }
+
+.section-separator {
+  border: 0;
+  height: 1px;
+  background-color: var(--light-bg);
+  max-width: 850px;
+  margin: 4rem auto;
+}
+
+.fun-facts-section { max-width: 850px; margin: 0 auto; }
+.fun-facts-section h2 { font-size: 2.5rem; }
+.facts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    text-align: left;
+}
+.fact-card {
+    background-color: var(--light-bg);
+    padding: 1.5rem;
+    border-radius: 12px;
+}
+.fact-card-title { font-size: 1.5rem; }
+.fact-card-text { font-size: 1rem; color: var(--text-secondary); }
+
+.final-cta { padding: 6rem 1rem 4rem 1rem; }
+.final-cta h2 { font-size: 2.2rem; max-width: 500px; margin: 0 auto 1.5rem auto; }
+footer { padding: 2rem 1rem; font-size: 0.9rem; color: var(--text-secondary); border-top: 1px solid var(--light-bg); }
