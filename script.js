@@ -1,11 +1,9 @@
 const translations = {
     en: {
-        'page-title': 'Heyniku',
+        'page-title': 'HeyNiku',
         'cta-contact-us': 'Contact Us',
         'intro-h1': 'Turn Repetition Into <span class="text-accent">Results</span>',
         'intro-p': 'We build simple automations and clear dashboards to solve routine tasks, unlocking sustainable growth for your business.',
-        'about-p1': '<strong>We solve a universal business problem: valuable time lost to <span class="text-accent">repetitive manual tasks.</span></strong> We believe in simple solutions—lightweight scripts and intuitive dashboards—over complex, expensive platforms.',
-        'about-p2': "Our mission is to give your team back its time. We automate the mundane to <span class=\"text-accent\">unlock</span> your team's potential for innovation and strategy. Our tools scale with you, ensuring your efficiency grows as you do.",
         'approach-h2': 'Our Approach',
         'step1-title': 'Discovery & Analysis',
         'step1-desc': 'We start by understanding your unique challenges and identifying the key repetitive tasks that are slowing you down.',
@@ -13,13 +11,13 @@ const translations = {
         'step2-desc': 'We design and build lightweight scripts and custom dashboards tailored specifically to your workflow and existing systems.',
         'step3-title': 'Growth & Support',
         'step3-desc': 'We deploy the solution and provide ongoing support, ensuring our tools scale with you as your business grows.',
+        'about-p1': '<strong>We solve a universal business problem: valuable time lost to <span class="text-accent">repetitive manual tasks.</span></strong> We believe in simple solutions—lightweight scripts and intuitive dashboards—over complex, expensive platforms.',
+        'about-p2': "Our mission is to give your team back its time. We automate the mundane to <span class=\"text-accent\">unlock</span> your team's potential for innovation and strategy. Our tools scale with you, ensuring your efficiency grows as you do.",
         'feature1-h2': 'Automate Your Workflow',
         'feature1-p': 'Choose your path: <span class="text-accent">Automate to increase efficiency</span> and free up your team, or let manual tasks accumulate and hinder your growth as you scale.',
         'feature2-h2': 'Manage Inventory Intelligently',
-        // UPDATED text for the new chart story
         'feature2-p': 'Take control of your stock to achieve <span class="text-accent">best-in-class accuracy</span>, or risk increasing errors and waste as your business grows.',
         'feature3-h2': 'Visualize Your Growth',
-        // UPDATED text for the new chart story
         'feature3-p': 'Make faster, smarter decisions. Our dashboards provide a <span class="text-accent">clear roadmap for growth</span>, helping you rise above the competition instead of falling behind.',
         'facts-h2': 'Did You Know?',
         'fact1-title': '6+ Hours a Week',
@@ -32,36 +30,35 @@ const translations = {
         'final-cta-button': 'Contact Us',
         'footer-p': '© 2025 HeyNiku.dev. All rights reserved.'
     },
+    // --- UPDATED THAI TRANSLATIONS ---
     th: {
         'page-title': 'Heyniku',
         'cta-contact-us': 'ติดต่อเรา',
-        'intro-h1': 'เปลี่ยนงานซ้ำซากให้เป็น<span class="text-accent">ผลลัพธ์</span>',
-        'intro-p': 'เราสร้างระบบอัตโนมัติและแดชบอร์ดที่ชัดเจนเพื่อแก้ไขงานที่น่าเบื่อหน่าย ปลดล็อกการเติบโตที่ยั่งยืนสำหรับธุรกิจของคุณ',
-        'about-p1': '<strong>เราแก้ปัญหาที่เป็นสากลของธุรกิจ: การสูญเสียเวลาอันมีค่าไปกับ<span class="text-accent">งานที่ต้องทำด้วยตนเองซ้ำๆ</span></strong> เราเชื่อในโซลูชันที่เรียบง่าย—ด้วยสคริปต์ขนาดเล็กและแดชบอร์ดที่ใช้งานง่าย—แทนที่แพลตฟอร์มที่ซับซ้อนและมีราคาแพง',
-        'about-p2': 'ภารกิจของเราคือการคืนเวลาให้กับทีมของคุณ เราเปลี่ยนงานที่น่าเบื่อให้เป็นระบบอัตโนมัติเพื่อ<span class="text-accent">ปลดล็อก</span>ศักยภาพของทีมสำหรับนวัตกรรมและกลยุทธ์ เครื่องมือของเราสามารถปรับขนาดไปพร้อมกับคุณ เพื่อให้แน่ใจว่าประสิทธิภาพจะเติบโตไปพร้อมกับธุรกิจของคุณ',
+        'intro-h1': 'เปลี่ยนงานที่จำเจให้เป็น <span class="text-accent">ความสำเร็จ</span>',
+        'intro-p': 'เราสร้างระบบอัตโนมัติและแดชบอร์ดที่ใช้งานง่าย เพื่อจัดการกับงานที่ต้องทำเป็นประจำ และปลดล็อกการเติบโตที่ยั่งยืนให้กับธุรกิจของคุณ',
         'approach-h2': 'แนวทางการทำงานของเรา',
         'step1-title': 'ค้นหาและวิเคราะห์',
-        'step1-desc': 'เราเริ่มต้นด้วยการทำความเข้าใจความท้าทายเฉพาะของคุณ และระบุงานซ้ำซากที่สำคัญซึ่งทำให้การทำงานของคุณช้าลง',
-        'step2-title': 'การสร้างระบบอัตโนมัติ',
-        'step2-desc': 'เราออกแบบและสร้างสคริปต์ขนาดเล็กและแดชบอร์ดที่ปรับแต่งให้เหมาะสมกับเวิร์กโฟลว์และระบบที่คุณมีอยู่โดยเฉพาะ',
-        'step3-title': 'การเติบโตและการสนับสนุน',
-        'step3-desc': 'เรานำโซลูชันไปใช้งานจริงและให้การสนับสนุนอย่างต่อเนื่อง เพื่อให้แน่ใจว่าเครื่องมือของเราจะเติบโตไปพร้อมกับธุรกิจของคุณ',
-        'feature1-h2': 'สร้าง Workflow อัตโนมัติ',
-        'feature1-p': 'เลือกเส้นทางของคุณ: <span class="text-accent">ใช้ระบบอัตโนมัติเพื่อเพิ่มประสิทธิภาพ</span>และปลดล็อกเวลาของทีม หรือปล่อยให้งานแมนนวลสะสมจนเป็นอุปสรรคต่อการเติบโตของคุณ',
+        'step1-desc': 'เราเริ่มต้นด้วยการทำความเข้าใจความท้าทายทางธุรกิจของคุณ เพื่อค้นหาว่างานซ้ำซากส่วนไหนที่ทำให้ทีมของคุณทำงานได้ช้าลง',
+        'step2-title': 'ออกแบบและพัฒนาระบบ',
+        'step2-desc': 'เราออกแบบและสร้างสคริปต์และแดชบอร์ดที่ปรับแต่งมาเพื่อเวิร์กโฟลว์และระบบปัจจุบันของคุณโดยเฉพาะ',
+        'step3-title': 'ติดตั้งและดูแลต่อเนื่อง',
+        'step3-desc': 'เราติดตั้งระบบและพร้อมให้การสนับสนุนอย่างต่อเนื่อง เพื่อให้แน่ใจว่าเครื่องมือของเราจะเติบโตไปพร้อมกับธุรกิจของคุณได้อย่างราบรื่น',
+        'about-p1': '<strong>เราแก้ปัญหาใหญ่ที่ทุกธุรกิจเจอ: การเสียเวลาไปกับ<span class="text-accent">งานซ้ำซากที่ต้องทำเอง</span></strong> เราเชื่อว่าทางออกที่ดีที่สุดคือความเรียบง่าย ด้วยสคริปต์ขนาดเล็กและแดชบอร์ดที่ใช้งานง่าย แทนที่จะเป็นแพลตฟอร์มที่ซับซ้อนและราคาแพง',
+        'about-p2': 'เป้าหมายของเราคือการคืนเวลาให้กับทีมของคุณ เราใช้ระบบอัตโนมัติเพื่อ<span class="text-accent">ปลดล็อก</span>ศักยภาพของทีมให้พวกเขาสามารถมุ่งเน้นไปที่นวัตกรรมและกลยุทธ์ได้เต็มที่ เครื่องมือของเราพร้อมเติบโตไปพร้อมกับคุณ',
+        'feature1-h2': 'Workflow อัตโนมัติ',
+        'feature1-p': 'เลือกเส้นทางของคุณ: <span class="text-accent">เพิ่มประสิทธิภาพด้วยระบบอัตโนมัติ</span> เพื่อให้ทีมของคุณมีเวลามากขึ้น หรือจะปล่อยให้งานที่ต้องทำเองสะสมจนกลายเป็นอุปสรรคต่อการเติบโต',
         'feature2-h2': 'จัดการสต็อกอย่างชาญฉลาด',
-        // UPDATED text for the new chart story
-        'feature2-p': 'ควบคุมสต็อกสินค้าของคุณเพื่อให้ได้<span class="text-accent">ความแม่นยำระดับสูงสุด</span> หรือเสี่ยงต่อข้อผิดพลาดและของเสียที่เพิ่มขึ้นเมื่อธุรกิจของคุณเติบโต',
-        'feature3-h2': 'เห็นภาพการเติบโตของคุณ',
-        // UPDATED text for the new chart story
-        'feature3-p': 'ตัดสินใจได้เร็วและชาญฉลาดยิ่งขึ้น แดชบอร์ดของเรามอบ<span class="text-accent">แผนงานที่ชัดเจนสู่การเติบโต</span> ช่วยให้คุณก้าวนำคู่แข่งแทนที่จะถูกทิ้งไว้ข้างหลัง',
+        'feature2-p': 'ควบคุมสต็อกสินค้าเพื่อให้ได้<span class="text-accent">ความแม่นยำระดับสูงสุด</span> และลดความเสี่ยงจากข้อผิดพลาดที่อาจเพิ่มขึ้นเมื่อธุรกิจของคุณเติบโต',
+        'feature3-h2': 'ข้อมูลชี้วัดการเติบโต',
+        'feature3-p': 'ตัดสินใจทางธุรกิจได้เร็วและเฉียบคมยิ่งขึ้น แดชบอร์ดของเราจะเปลี่ยนข้อมูลที่ซับซ้อนให้เป็น<span class="text-accent">แผนงานสู่การเติบโตที่ชัดเจน</span>',
         'facts-h2': 'คุณรู้หรือไม่?',
         'fact1-title': '6+ ชั่วโมงต่อสัปดาห์',
-        'fact1-text': 'คือเวลาที่พนักงาน 60% เชื่อว่าพวกเขาสามารถประหยัดได้หากงานประจำของพวกเขาเป็นอัตโนมัติ',
+        'fact1-text': 'คือเวลาที่พนักงาน 60% เชื่อว่าสามารถประหยัดได้ หากงานประจำของพวกเขาเป็นอัตโนมัติ',
         'fact2-title': 'ข้อมูลเพียง 12%',
-        'fact2-text': 'คือสิ่งที่ธุรกิจส่วนใหญ่ใช้ในการวิเคราะห์ ส่วนอีก 88% ที่เหลือเต็มไปด้วยโอกาสที่พลาดไปและข้อมูลเชิงลึกที่สำคัญ',
+        'fact2-text': 'คือสิ่งที่ธุรกิจส่วนใหญ่นำมาวิเคราะห์ ส่วนอีก 88% ที่เหลือเต็มไปด้วยโอกาสที่อาจพลาดไป',
         'fact3-title': 'ช่องว่างการเติบโต 30%',
-        'fact3-text': 'ธุรกิจที่ขับเคลื่อนด้วยข้อมูลเชิงลึกเติบโตเฉลี่ยมากกว่า 30% ต่อปี บริษัทที่ไม่ได้ใช้ข้อมูลของตนเองเสี่ยงที่จะตามหลังและสูญเสียส่วนแบ่งการตลาด',
-        'final-cta-h2': 'พร้อมที่จะดู <span class="text-accent">เดโม</span> แล้วหรือยัง?',
+        'fact3-text': 'ธุรกิจที่ขับเคลื่อนด้วยข้อมูลจะเติบโตเฉลี่ยมากกว่า 30% ต่อปี บริษัทที่ไม่ได้ใช้ข้อมูลจึงเสี่ยงที่จะถูกทิ้งไว้ข้างหลัง',
+        'final-cta-h2': 'พร้อมดู <span class="text-accent">เดโม</span> แล้วหรือยัง?',
         'final-cta-button': 'ติดต่อเรา',
         'footer-p': '© 2025 HeyNiku.dev สงวนลิขสิทธิ์'
     }
@@ -110,7 +107,6 @@ const redAccentBg = 'rgba(239, 68, 68, 0.2)';
 const greenAccent = 'rgba(34, 197, 94, 1)';
 const greenAccentBg = 'rgba(34, 197, 94, 0.2)';
 
-// Chart 1: Automation
 new Chart(document.getElementById('automationChart'), {
   type: 'line',
   data: { 
@@ -135,7 +131,6 @@ new Chart(document.getElementById('automationChart'), {
   options: { ...chartDefaultOptions, plugins: { legend: { ...chartDefaultOptions.plugins.legend, display: true } } }
 });
 
-// UPDATED: Chart 2: Inventory
 new Chart(document.getElementById('inventoryChart'), {
   type: 'line',
   data: { 
@@ -160,7 +155,6 @@ new Chart(document.getElementById('inventoryChart'), {
   options: { ...chartDefaultOptions, scales: { ...chartDefaultOptions.scales, y: { ...chartDefaultOptions.scales.y, min: 40 } }, plugins: { legend: { ...chartDefaultOptions.plugins.legend, display: true } } }
 });
 
-// UPDATED: Chart 3: Dashboards
 new Chart(document.getElementById('dashboardsChart'), {
   type: 'line',
   data: { 
