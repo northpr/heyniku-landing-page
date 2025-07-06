@@ -5,7 +5,7 @@
   --text-secondary: #888888;
   --accent-red: #EF4444;
   --accent-blue: #38BDF8;
-  --accent-green: #22C55E; /* ADDED for stock style chart */
+  --accent-green: #22C55E;
 }
 
 body { 
@@ -167,7 +167,12 @@ main { padding: 2rem 1rem; }
 
 .feature-section h2 { font-size: 2.5rem; margin-top: 0; }
 .feature-section p { color: var(--text-secondary); max-width: 600px; margin: 0 auto 2.5rem auto; font-size: 1.1rem; }
-.chart-container { max-width: 650px; margin: 0 auto; }
+
+/* UPDATED: Increased max-width by 50% */
+.chart-container { 
+    max-width: 975px; 
+    margin: 0 auto; 
+}
 
 .section-separator {
   border: 0;
