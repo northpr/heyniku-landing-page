@@ -259,6 +259,125 @@ main { padding: 2rem 1rem; }
 .fact-card-title { font-size: 1.5rem; }
 .fact-card-text { font-size: 1rem; color: var(--text-secondary); }
 
+/* Process Section Styles */
+.process-section {
+  padding: 4rem 2rem;
+  background-color: var(--light-bg);
+}
+
+.process-section .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.process-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.process-steps {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.8rem;
+  flex-wrap: nowrap;
+}
+
+.step-card {
+  flex: 1;
+  min-width: 180px;
+  max-width: 250px;
+  background-color: var(--dark-bg);
+  padding: 1.8rem 1.2rem;
+  border-radius: 16px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.step-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(239, 68, 68, 0.1);
+}
+
+.step-label {
+  background-color: var(--accent-red);
+  color: var(--text-primary);
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-family: 'IBM Plex Mono', monospace;
+  font-weight: 600;
+  font-size: 0.9rem;
+  display: inline-block;
+  margin-bottom: 1.5rem;
+}
+
+.step-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  color: var(--text-primary);
+}
+
+.step-card p {
+  color: var(--text-secondary);
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.step-arrow {
+  font-size: 2rem;
+  color: var(--accent-red);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0.5rem;
+  font-weight: bold;
+  height: 100%;
+  align-self: center;
+}
+
+/* Responsive Design for Process Section */
+@media (max-width: 1024px) {
+  .process-steps {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .step-arrow {
+    transform: rotate(90deg);
+    margin: 1rem 0;
+  }
+  
+  .step-card {
+    max-width: 400px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .process-section {
+    padding: 3rem 1rem;
+  }
+  
+  .process-section h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .step-card {
+    padding: 1.5rem 1rem;
+  }
+  
+  .step-card h3 {
+    font-size: 1.2rem;
+  }
+  
+  .step-card p {
+    font-size: 0.95rem;
+  }
+}
+
 .final-cta { padding: 6rem 1rem 4rem 1rem; }
 .final-cta h2 { font-size: 2.2rem; max-width: 500px; margin: 0 auto 1.5rem auto; }
 footer { padding: 2rem 1rem; font-size: 0.9rem; color: var(--text-secondary); border-top: 1px solid var(--light-bg); }
