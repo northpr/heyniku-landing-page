@@ -27,10 +27,39 @@ h1, h2, .logo, .fact-card-title, .step-title {
 .text-accent { color: var(--accent-red); }
 
 header {
+  padding: 1rem 2rem 4rem 2rem;
+}
+
+.header-nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
+  margin-bottom: 3rem;
+}
+
+.header-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header-left {
+  text-align: left;
+}
+
+.header-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
 }
 
 .logo { font-size: 1.5rem; }
@@ -79,24 +108,29 @@ header {
 
 main { padding: 2rem 1rem; }
 
-.intro {
-  max-width: 700px;
-  margin: 2rem auto 4rem auto;
+.header-left .intro {
+  margin-bottom: 3rem;
 }
 
-.intro h1 { font-size: 3.2rem; line-height: 1.2; }
-.intro p { font-size: 1.2rem; color: var(--text-primary); }
+.header-left .intro h1 { 
+  font-size: 3.2rem; 
+  line-height: 1.2; 
+  margin-bottom: 1rem;
+}
 
-.about-section {
-    text-align: left;
-    max-width: 850px;
-    margin: 0 auto 4rem auto;
+.header-left .intro p { 
+  font-size: 1.2rem; 
+  color: var(--text-primary); 
+}
+
+.header-left .about-section {
     background-color: var(--light-bg);
     padding: 2.5rem;
     border-radius: 16px;
+    margin: 0;
 }
 
-.about-section p {
+.header-left .about-section p {
     font-size: 1.1rem;
     color: var(--text-primary);
     margin-bottom: 1rem;
@@ -156,6 +190,33 @@ main { padding: 2rem 1rem; }
 @media (max-width: 800px) {
     .approach-grid {
         grid-template-columns: 1fr;
+    }
+    
+    .header-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        text-align: center;
+    }
+    
+    .header-left {
+        text-align: center;
+    }
+    
+    .header-left .intro h1 {
+        font-size: 2.5rem;
+    }
+    
+    .header-left .about-section {
+        padding: 2rem;
+        text-align: left;
+    }
+    
+    header {
+        padding: 1rem 1rem 3rem 1rem;
+    }
+    
+    .header-nav {
+        margin-bottom: 2rem;
     }
 }
 
