@@ -1,30 +1,31 @@
 :root {
-  --dark-bg: #121212;
-  --light-bg: #1E1E1E;
-  --text-primary: #FFFFFF;
-  --text-secondary: #888888;
-  --accent-red: #EF4444;
-  --accent-blue: #38BDF8;
-  --accent-green: #22C55E;
+  --cream-bg: #FEFCF8;
+  --light-cream-bg: #F5F3F0;
+  --warm-beige: #E8E4DF;
+  --text-primary: #2C2C2C;
+  --text-secondary: #666666;
+  --accent-blue: #0058A3;
+  --accent-blue-light: #4A90E2;
+  --accent-blue-hover: #005BB5;
 }
 
 body { 
-  font-family: 'Montserrat', sans-serif; 
+  font-family: 'Noto Sans Thai', sans-serif; 
   font-weight: 400;
   margin: 0; 
   padding: 0; 
-  background-color: var(--dark-bg);
+  background-color: var(--cream-bg);
   color: var(--text-primary); 
   line-height: 1.7; 
   text-align: center;
 }
 
 h1, h2, .logo, .fact-card-title, .step-title {
-  font-family: 'IBM Plex Mono', monospace;
+  font-family: 'Noto Sans Thai', sans-serif;
   font-weight: 600;
 }
 
-.text-accent { color: var(--accent-red); }
+.text-accent { color: var(--accent-blue); }
 
 header {
   padding: 1rem 2rem 4rem 2rem;
@@ -85,8 +86,8 @@ header {
 }
 
 .cta-button {
-  background-color: var(--accent-red);
-  color: var(--text-primary);
+  background-color: var(--accent-blue);
+  color: white;
   padding: 0.6rem 1.2rem;
   border-radius: 8px;
   text-decoration: none;
@@ -94,15 +95,20 @@ header {
   transition: all 0.3s ease;
 }
 
+.cta-button:hover {
+  background-color: var(--accent-blue-hover);
+  transform: scale(1.05);
+}
+
 .cta-button.cta-outline {
     background-color: transparent;
-    color: var(--accent-red);
-    border: 2px solid var(--accent-red);
+    color: var(--accent-blue);
+    border: 2px solid var(--accent-blue);
 }
 
 .cta-button.cta-outline:hover {
-    background-color: var(--accent-red);
-    color: var(--text-primary);
+    background-color: var(--accent-blue);
+    color: white;
     transform: scale(1.05);
 }
 
@@ -124,7 +130,7 @@ main { padding: 2rem 1rem; }
 }
 
 .header-left .about-section {
-    background-color: var(--light-bg);
+    background-color: var(--light-cream-bg);
     padding: 2.5rem;
     border-radius: 16px;
     margin: 0;
@@ -156,7 +162,7 @@ main { padding: 2rem 1rem; }
 }
 
 .approach-step {
-    background-color: var(--light-bg);
+    background-color: var(--light-cream-bg);
     padding: 2.5rem 2rem;
     border-radius: 16px;
 }
@@ -238,7 +244,7 @@ main { padding: 2rem 1rem; }
 .section-separator {
   border: 0;
   height: 1px;
-  background-color: var(--light-bg);
+  background-color: var(--warm-beige);
   max-width: 850px;
   margin: 4rem auto;
 }
@@ -252,7 +258,7 @@ main { padding: 2rem 1rem; }
     text-align: left;
 }
 .fact-card {
-    background-color: var(--light-bg);
+    background-color: var(--light-cream-bg);
     padding: 1.5rem;
     border-radius: 12px;
 }
@@ -262,7 +268,7 @@ main { padding: 2rem 1rem; }
 /* Process Section Styles */
 .process-section {
   padding: 4rem 2rem;
-  background-color: var(--light-bg);
+  background-color: var(--light-cream-bg);
 }
 
 .process-section .container {
@@ -288,21 +294,22 @@ main { padding: 2rem 1rem; }
   flex: 1;
   min-width: 180px;
   max-width: 250px;
-  background-color: var(--dark-bg);
+  background-color: var(--cream-bg);
   padding: 1.8rem 1.2rem;
   border-radius: 16px;
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid var(--warm-beige);
 }
 
 .step-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 30px rgba(239, 68, 68, 0.1);
+  box-shadow: 0 10px 30px rgba(0, 88, 163, 0.1);
 }
 
 .step-label {
-  background-color: var(--accent-red);
-  color: var(--text-primary);
+  background-color: var(--accent-blue);
+  color: white;
   padding: 0.5rem 1rem;
   border-radius: 20px;
   font-family: 'IBM Plex Mono', monospace;
@@ -327,7 +334,7 @@ main { padding: 2rem 1rem; }
 
 .step-arrow {
   font-size: 2rem;
-  color: var(--accent-red);
+  color: var(--accent-blue);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -380,12 +387,12 @@ main { padding: 2rem 1rem; }
 
 .final-cta { padding: 6rem 1rem 4rem 1rem; }
 .final-cta h2 { font-size: 2.2rem; max-width: 500px; margin: 0 auto 1.5rem auto; }
-footer { padding: 2rem 1rem; font-size: 0.9rem; color: var(--text-secondary); border-top: 1px solid var(--light-bg); }
+footer { padding: 2rem 1rem; font-size: 0.9rem; color: var(--text-secondary); border-top: 1px solid var(--warm-beige); }
 
 
 /* Style for the new intro body to match the original design */
 #intro-body {
-  background-color: var(--light-bg); /* Creates the darker box */
+  background-color: var(--light-cream-bg); /* Creates the darker box */
   padding: 2.5rem;                    /* Adds spacing inside the box */
   border-radius: 16px;                /* Rounds the corners */
   margin-top: 3rem;                   /* Adds space below the main headline */
@@ -395,7 +402,7 @@ footer { padding: 2rem 1rem; font-size: 0.9rem; color: var(--text-secondary); bo
 /* Beautiful Comparison Table Styles */
 .comparison-section {
   padding: 4rem 2rem;
-  background-color: var(--dark-bg);
+  background-color: var(--cream-bg);
 }
 
 .comparison-section .container {
@@ -413,9 +420,10 @@ footer { padding: 2rem 1rem; font-size: 0.9rem; color: var(--text-secondary); bo
 .comparison-table-container {
   overflow-x: auto;
   border-radius: 20px;
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
-  background: linear-gradient(135deg, var(--light-bg) 0%, #2a2a2a 100%);
+  box-shadow: 0 20px 60px rgba(44, 44, 44, 0.1);
+  background: var(--cream-bg);
   padding: 2rem;
+  border: 1px solid var(--warm-beige);
 }
 
 .beautiful-comparison-table {
@@ -423,13 +431,13 @@ footer { padding: 2rem 1rem; font-size: 0.9rem; color: var(--text-secondary); bo
   border-collapse: separate;
   border-spacing: 0;
   background-color: transparent;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Noto Sans Thai', sans-serif;
 }
 
 /* Header Styling */
 .table-header-row {
-  background-color: var(--light-bg);
-  border-bottom: 2px solid rgba(239, 68, 68, 0.2);
+  background-color: var(--light-cream-bg);
+  border-bottom: 2px solid var(--accent-blue);
 }
 
 .table-header-row th {
@@ -440,7 +448,7 @@ footer { padding: 2rem 1rem; font-size: 0.9rem; color: var(--text-secondary); bo
   font-weight: 600;
   font-size: 1rem;
   position: relative;
-  border-right: 1px solid rgba(255, 255, 255, 0.1);
+  border-right: 1px solid var(--warm-beige);
 }
 
 .table-header-row th:last-child {
@@ -463,13 +471,14 @@ footer { padding: 2rem 1rem; font-size: 0.9rem; color: var(--text-secondary); bo
 }
 
 .recommended-column {
-  background: linear-gradient(135deg, rgba(34, 197, 94, 0.7) 0%, rgba(22, 163, 74, 0.7) 100%) !important;
+  background: linear-gradient(135deg, var(--accent-blue) 0%, var(--accent-blue-hover) 100%) !important;
   position: relative;
+  color: white !important;
 }
 
 .recommended-badge {
   background-color: rgba(255, 255, 255, 0.2);
-  color: var(--text-primary);
+  color: white;
   padding: 0.3rem 0.8rem;
   border-radius: 20px;
   font-size: 0.8rem;
@@ -485,15 +494,15 @@ footer { padding: 2rem 1rem; font-size: 0.9rem; color: var(--text-secondary); bo
 
 .table-data-row:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(239, 68, 68, 0.1);
+  box-shadow: 0 8px 25px rgba(0, 88, 163, 0.1);
 }
 
 .table-data-row:nth-child(even) {
-  background-color: rgba(255, 255, 255, 0.02);
+  background-color: var(--cream-bg);
 }
 
 .table-data-row:nth-child(odd) {
-  background-color: rgba(255, 255, 255, 0.05);
+  background-color: rgba(245, 243, 240, 0.5);
 }
 
 .table-data-row:last-child td:first-child {
@@ -515,11 +524,11 @@ footer { padding: 2rem 1rem; font-size: 0.9rem; color: var(--text-secondary); bo
 }
 
 .metric-cell {
-  background-color: var(--light-bg);
+  background-color: var(--light-cream-bg);
   color: var(--text-primary);
   font-weight: 600;
   text-align: left;
-  border-right: 3px solid var(--accent-red);
+  border-right: 3px solid var(--accent-blue);
 }
 
 .metric-cell strong {
@@ -543,9 +552,9 @@ footer { padding: 2rem 1rem; font-size: 0.9rem; color: var(--text-secondary); bo
 
 /* HeyNiku Column - Positive */
 .heyniku-cell.positive-cell.highlighted {
-  background-color: rgba(34, 197, 94, 0.06);
+  background-color: rgba(0, 88, 163, 0.06);
   color: var(--text-primary);
-  border-left: 3px solid rgba(34, 197, 94, 0.7);
+  border-left: 3px solid var(--accent-blue);
   font-weight: 600;
   position: relative;
 }
@@ -557,7 +566,7 @@ footer { padding: 2rem 1rem; font-size: 0.9rem; color: var(--text-secondary); bo
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(135deg, rgba(34, 197, 94, 0.02) 0%, transparent 100%);
+  background: linear-gradient(135deg, rgba(0, 88, 163, 0.02) 0%, transparent 100%);
   border-radius: 8px;
   pointer-events: none;
 }

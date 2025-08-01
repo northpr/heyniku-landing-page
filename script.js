@@ -133,22 +133,22 @@ document.querySelectorAll('.lang-link').forEach(link => {
 // Set default language on page load
 setLanguage('th'); 
 
-Chart.defaults.font.family = "'Montserrat', sans-serif";
+Chart.defaults.font.family = "'Noto Sans Thai', sans-serif";
 Chart.defaults.font.weight = '600';
 
 const chartDefaultOptions = {
-  plugins: { legend: { labels: { color: 'white', font: { size: 14 } } } },
+  plugins: { legend: { labels: { color: '#2C2C2C', font: { size: 14 } } } },
   scales: {
-    y: { ticks: { color: 'white', font: { size: 12 } }, grid: { color: 'rgba(255, 255, 255, 0.1)' } },
-    x: { ticks: { color: 'white', font: { size: 12 } }, grid: { color: 'rgba(255, 255, 255, 0.0)' } }
+    y: { ticks: { color: '#2C2C2C', font: { size: 12 } }, grid: { color: 'rgba(44, 44, 44, 0.1)' } },
+    x: { ticks: { color: '#2C2C2C', font: { size: 12 } }, grid: { color: 'rgba(44, 44, 44, 0.0)' } }
   },
   tension: 0.4
 };
 
-const redAccent = 'rgba(239, 68, 68, 1)';
-const redAccentBg = 'rgba(239, 68, 68, 0.2)';
-const greenAccent = 'rgba(34, 197, 94, 1)';
-const greenAccentBg = 'rgba(34, 197, 94, 0.2)';
+const blueAccent = 'rgba(0, 88, 163, 1)';
+const blueAccentBg = 'rgba(0, 88, 163, 0.2)';
+const lightBlueAccent = 'rgba(74, 144, 226, 1)';
+const lightBlueAccentBg = 'rgba(74, 144, 226, 0.2)';
 
 new Chart(document.getElementById('automationChart'), {
   type: 'line',
@@ -159,15 +159,15 @@ new Chart(document.getElementById('automationChart'), {
             label: 'Efficiency with Automation',
             data: [0, 20, 35, 48],
             fill: true,
-            backgroundColor: greenAccentBg,
-            borderColor: greenAccent
+            backgroundColor: blueAccentBg,
+            borderColor: blueAccent
         },
         {
             label: 'Manual Workload Drag',
             data: [0, -5, -15, -30],
             fill: true,
-            backgroundColor: redAccentBg,
-            borderColor: redAccent
+            backgroundColor: lightBlueAccentBg,
+            borderColor: lightBlueAccent
         }
     ] 
   },
@@ -183,15 +183,15 @@ new Chart(document.getElementById('inventoryChart'), {
             label: 'Accuracy with Management',
             data: [75, 88, 96, 99.5],
             fill: true,
-            backgroundColor: greenAccentBg,
-            borderColor: greenAccent
+            backgroundColor: blueAccentBg,
+            borderColor: blueAccent
         },
         {
             label: 'Errors without Management',
             data: [75, 68, 60, 50],
             fill: true,
-            backgroundColor: redAccentBg,
-            borderColor: redAccent
+            backgroundColor: lightBlueAccentBg,
+            borderColor: lightBlueAccent
         }
     ]
   },
@@ -207,15 +207,15 @@ new Chart(document.getElementById('dashboardsChart'), {
             label: 'Growth with Data', 
             data: [5, 22, 40, 60], 
             fill: true, 
-            backgroundColor: greenAccentBg, 
-            borderColor: greenAccent 
+            backgroundColor: blueAccentBg, 
+            borderColor: blueAccent 
         },
         { 
             label: 'Stagnation without Data', 
             data: [2, 1, 0, -2], 
             fill: true, 
-            backgroundColor: redAccentBg, 
-            borderColor: redAccent 
+            backgroundColor: lightBlueAccentBg, 
+            borderColor: lightBlueAccent 
         }
     ] 
   },
